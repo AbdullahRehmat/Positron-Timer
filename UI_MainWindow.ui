@@ -30,6 +30,9 @@
    <iconset theme="time">
     <normaloff>.</normaloff>.</iconset>
   </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout_2">
     <property name="spacing">
