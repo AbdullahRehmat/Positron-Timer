@@ -36,6 +36,8 @@ class MainWindow:
 
         while self.timer_status == True:
 
+            QApplication.processEvents()
+
             if duration == 0 and seconds == 0:
                 # Write to Display
                 self.display_contents = "-:--"
@@ -57,7 +59,7 @@ class MainWindow:
                 # Write to Display
                 self.update_lcd()
 
-                # Time Logic
+                # Countdown Logic
                 seconds -= 1
                 time.sleep(1)
 
@@ -122,7 +124,7 @@ class MainWindow:
         self.timer_status = False
 
         # Clear LCD Screen
-        self.display_contents = "0"
+        self.display_contents = 0
         self.update_lcd()
 
         # Flash Status Bar Message
