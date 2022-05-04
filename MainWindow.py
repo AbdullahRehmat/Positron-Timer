@@ -13,7 +13,7 @@ class MainWindow:
 
         # Define UI Elements
         self.lcd = self.ui.lcd_display
-        self.time_edit = self.ui.time_edit_box
+        self.time_setting = self.ui.time_edit_box
         self.status_bar = self.ui.statusbar
 
         # Set Timer Loop Status
@@ -106,7 +106,7 @@ class MainWindow:
         self.status_bar.showMessage("Timer Started")
 
         # Get Time Value From Input Box
-        time_input = self.time_edit.time().minute()
+        time_input = self.time_setting.time().minute()
 
         # Check if a time if provided
         if time_input <= 0:
@@ -124,7 +124,7 @@ class MainWindow:
         self.timer_status = False
 
         # Clear LCD Screen
-        self.display_contents = 0
+        self.display_contents = "0:00"
         self.update_lcd()
 
         # Flash Status Bar Message

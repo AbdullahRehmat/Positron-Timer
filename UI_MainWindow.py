@@ -87,3 +87,13 @@ class Ui_mainWindow(object):
         self.time_edit_box.setDisplayFormat(_translate("mainWindow", "mm"))
         self.reset_timer_btn.setText(_translate("mainWindow", "Reset Timer"))
         self.start_timer_btn.setText(_translate("mainWindow", "Start Timer"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    mainWindow = QtWidgets.QMainWindow()
+    ui = Ui_mainWindow()
+    ui.setupUi(mainWindow)
+    mainWindow.show()
+    sys.exit(app.exec())
