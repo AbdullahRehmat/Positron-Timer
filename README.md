@@ -39,6 +39,6 @@ Forms part of the Positron Software Suite.
 ### To Build
 
 - Update software version in `.spec` file
-- Update software version in `.ui` file via QtDesigner Software
-- Run `pipenv run python3 freeze > requirements.txt`
+- Update software version in `.ui` file via Qt-Designer Software
+- Run `pipenv run pip3 freeze > requirements.txt`
 - Run `pyinstaller --onefile MainWindow.py` to compile project to single executable file
